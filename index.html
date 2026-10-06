@@ -1,0 +1,1029 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ناصر عوض — كوتش نيز | مدرب كمال أجسام معتمد</title>
+<meta name="description" content="ناصر عوض (كوتش نيز) — مدرب شخصي ومدرب تغذية معتمد من NASM، بطل المملكة في كمال الأجسام فئة 172 سم. 15 سنة خبرة وأكثر من 1200 متدرّب.">
+<meta name="theme-color" content="#08090B">
+<meta property="og:type" content="profile">
+<meta property="og:title" content="ناصر عوض — كوتش نيز | مدرب كمال أجسام معتمد">
+<meta property="og:description" content="بطل المملكة فئة 172 سم · NASM-CPT · NASM-CNC · 15 سنة خبرة · 1200+ متدرّب">
+<meta property="og:image" content="nasser.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Anton&family=Archivo:wght@400;500;600;700;800&display=swap">
+<style>
+/* ============================== TOKENS ============================== */
+:root{
+  --void:#08090B; --pit:#0D0F13; --iron:#13161C; --card:#14181F; --card2:#191E27;
+  --line:#242A33; --line2:#313844;
+  --chalk:#F2F5F8; --ash:#929AA6; --dim:#626A77;
+  --volt:#2E6DF6; --volt2:#6DA4FF; --volt-dim:rgba(46,109,246,.14);
+  --jade:#19B37C;
+  --fd:'Almarai',system-ui,sans-serif;
+  --fb:'Almarai',system-ui,sans-serif;
+  --fl:'Anton',Impact,sans-serif;
+  --fn:'Archivo',ui-sans-serif,sans-serif;
+  --pad:clamp(18px,5vw,64px);
+  --maxw:1240px;
+  --ease:cubic-bezier(.16,1,.3,1);
+}
+html[dir=ltr]{--fd:'Archivo',sans-serif;--fb:'Archivo',sans-serif}
+
+*,*::before,*::after{box-sizing:border-box}
+*{margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  background:var(--void);color:var(--chalk);font-family:var(--fb);
+  font-size:clamp(14.5px,.33vw + 13.8px,16.5px);line-height:1.75;font-weight:400;
+  overflow-x:hidden;-webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+::selection{background:var(--volt);color:#fff}
+.ltr{direction:ltr;unicode-bidi:isolate;display:inline-block}
+.num{font-family:var(--fn);font-variant-numeric:tabular-nums;direction:ltr;unicode-bidi:isolate;display:inline-block}
+@media (prefers-reduced-motion:reduce){*{animation-duration:.01ms !important;transition-duration:.01ms !important}}
+
+/* ============================== CHROME ============================== */
+#bg{position:fixed;inset:0;z-index:0;pointer-events:none}
+.grain{position:fixed;inset:0;z-index:1;pointer-events:none;opacity:.5;mix-blend-mode:overlay;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)' opacity='.34'/%3E%3C/svg%3E")}
+.vign{position:fixed;inset:0;z-index:1;pointer-events:none;
+  background:radial-gradient(120% 85% at 50% 0%,transparent 40%,rgba(0,0,0,.55) 100%)}
+
+#prog{position:fixed;top:0;inset-inline-start:0;height:2px;width:0;z-index:70;
+  background:linear-gradient(90deg,var(--volt),var(--volt2));box-shadow:0 0 14px rgba(46,109,246,.8)}
+
+#loader{position:fixed;inset:0;z-index:100;background:var(--void);display:grid;place-items:center;
+  transition:opacity .7s var(--ease),visibility .7s}
+#loader.gone{opacity:0;visibility:hidden}
+.ld{display:grid;place-items:center;gap:20px}
+.plate{width:70px;height:70px;border-radius:50%;border:3px solid var(--line2);position:relative;
+  animation:spin 1.1s linear infinite}
+.plate::before{content:"";position:absolute;inset:-3px;border-radius:50%;
+  border:3px solid transparent;border-top-color:var(--volt);border-right-color:var(--volt)}
+.plate::after{content:"";position:absolute;inset:22px;border-radius:50%;background:var(--line)}
+@keyframes spin{to{transform:rotate(360deg)}}
+.ld b{font-family:var(--fl);font-size:13px;letter-spacing:.42em;color:var(--dim);
+  direction:ltr;font-weight:400}
+
+/* ============================== NAV ============================== */
+nav{position:fixed;top:0;inset-inline:0;z-index:60;transition:all .45s var(--ease)}
+nav .inner{max-width:var(--maxw);margin:0 auto;padding:16px var(--pad);
+  display:flex;align-items:center;gap:clamp(10px,2vw,30px)}
+nav.stuck{background:rgba(8,9,11,.82);backdrop-filter:blur(18px) saturate(1.3);
+  border-bottom:1px solid var(--line)}
+nav.stuck .inner{padding-block:11px}
+
+.brand{display:flex;align-items:center;gap:10px;flex:0 0 auto}
+.brand .mk{width:34px;height:34px;flex:0 0 auto;display:grid;place-items:center;
+  background:var(--volt);color:#fff;font-family:var(--fl);font-size:17px;line-height:1;
+  clip-path:polygon(0 0,100% 0,100% 72%,72% 100%,0 100%)}
+.brand .nm{font-family:var(--fl);font-size:19px;letter-spacing:.11em;direction:ltr;line-height:1}
+.brand .nm small{display:block;font-family:var(--fb);font-size:8.5px;letter-spacing:.3em;
+  color:var(--dim);font-weight:700;margin-top:3px}
+
+.links{display:flex;gap:clamp(8px,1.6vw,22px);margin-inline-start:auto;align-items:center}
+.links a{font-size:13.5px;font-weight:700;color:var(--ash);position:relative;padding:6px 2px;
+  transition:color .3s}
+.links a::after{content:"";position:absolute;bottom:0;inset-inline-start:0;height:2px;width:0;
+  background:var(--volt);transition:width .35s var(--ease)}
+.links a:hover{color:var(--chalk)}
+.links a:hover::after{width:100%}
+@media (max-width:900px){.links{display:none}}
+
+.navact{display:flex;align-items:center;gap:8px;margin-inline-start:auto}
+@media (min-width:901px){.navact{margin-inline-start:clamp(8px,1.6vw,22px)}}
+.ico{width:38px;height:38px;display:grid;place-items:center;border:1px solid var(--line2);
+  color:var(--ash);transition:all .32s var(--ease)}
+.ico svg{width:19px;height:19px}
+.ico:hover{color:#fff;transform:translateY(-2px)}
+.ico.wa:hover{background:#25D366;border-color:#25D366}
+.ico.ig:hover{background:linear-gradient(45deg,#F9CE34,#EE2A7B 55%,#6228D7);border-color:#EE2A7B}
+.lang{height:38px;padding:0 13px;border:1px solid var(--line2);font-family:var(--fn);
+  font-size:12px;font-weight:700;letter-spacing:.1em;color:var(--ash);
+  transition:all .3s var(--ease)}
+.lang:hover{color:#fff;border-color:var(--volt);background:var(--volt-dim)}
+
+/* ============================== LAYOUT ============================== */
+main{position:relative;z-index:2}
+section{max-width:var(--maxw);margin:0 auto;padding:clamp(66px,9vw,124px) var(--pad);position:relative}
+.eyebrow{display:inline-flex;align-items:center;gap:9px;font-size:11.5px;font-weight:800;
+  letter-spacing:.2em;color:var(--volt2);text-transform:uppercase;margin-bottom:16px}
+.eyebrow::before{content:"";width:26px;height:2px;background:var(--volt)}
+h2.sec{font-family:var(--fd);font-weight:800;line-height:1.12;
+  font-size:clamp(28px,4.6vw,50px);letter-spacing:-.01em;margin-bottom:14px}
+html[dir=ltr] h2.sec{text-transform:uppercase;letter-spacing:.005em}
+.lede{color:var(--ash);max-width:62ch;font-size:clamp(15px,.4vw + 14px,17px)}
+.shead{margin-bottom:clamp(30px,4vw,52px)}
+
+.rv{opacity:0;transform:translateY(26px);transition:opacity .85s var(--ease),transform .85s var(--ease)}
+.rv.in{opacity:1;transform:none}
+
+/* ============================== HERO ============================== */
+#hero{min-height:100svh;display:grid;align-content:center;padding-top:clamp(100px,14vh,150px);
+  padding-bottom:clamp(56px,8vh,90px)}
+.hgrid{display:grid;grid-template-columns:1.06fr .94fr;gap:clamp(26px,4vw,62px);align-items:center}
+@media (max-width:920px){.hgrid{grid-template-columns:1fr;gap:34px}}
+
+.hbadge{display:inline-flex;align-items:center;gap:9px;padding:7px 14px;margin-bottom:20px;
+  border:1px solid rgba(46,109,246,.42);background:var(--volt-dim);
+  font-size:11.5px;font-weight:800;letter-spacing:.08em;color:var(--volt2)}
+.hbadge svg{width:14px;height:14px;flex:0 0 auto}
+
+h1{font-family:var(--fd);font-weight:800;line-height:.98;letter-spacing:-.025em;
+  font-size:clamp(44px,9.4vw,104px)}
+h1 span{display:block}
+h1 .l2{color:transparent;-webkit-text-stroke:1.5px var(--line2)}
+html[dir=ltr] h1{font-family:var(--fl);font-weight:400;letter-spacing:.005em;line-height:.92;
+  text-transform:uppercase;font-size:clamp(48px,11vw,124px)}
+html[dir=ltr] h1 .l2{-webkit-text-stroke:2px var(--line2)}
+
+.hrole{margin-top:16px;font-size:clamp(15px,.5vw + 14px,19px);font-weight:700;color:var(--chalk);
+  max-width:36ch;line-height:1.55}
+.hsub{margin-top:12px;color:var(--ash);max-width:46ch}
+
+.hcta{display:flex;flex-wrap:wrap;gap:11px;margin-top:30px}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:14px 24px;font-weight:800;
+  font-size:14.5px;border:1px solid transparent;position:relative;
+  transition:transform .3s var(--ease),box-shadow .3s var(--ease),color .3s,background .3s,border-color .3s}
+.btn svg{width:18px;height:18px;flex:0 0 auto}
+.btn-p{background:#25D366;color:#06130B}
+.btn-p:hover{transform:translateY(-3px);box-shadow:0 14px 34px rgba(37,211,102,.3)}
+.btn-s{border-color:var(--line2);color:var(--chalk)}
+.btn-s:hover{border-color:var(--volt);background:var(--volt-dim);transform:translateY(-3px)}
+.btn-g{border-color:rgba(46,109,246,.45);color:var(--volt2)}
+.btn-g:hover{background:var(--volt-dim);border-color:var(--volt);transform:translateY(-3px)}
+
+.hstats{display:grid;grid-template-columns:repeat(4,auto);gap:clamp(14px,3vw,38px);
+  margin-top:clamp(30px,4.5vw,46px);padding-top:26px;border-top:1px solid var(--line);
+  justify-content:start}
+@media (max-width:560px){.hstats{grid-template-columns:repeat(2,1fr);gap:20px}}
+.hstats b{display:block;font-family:var(--fn);font-weight:800;font-size:clamp(22px,3.3vw,32px);
+  line-height:1;color:var(--chalk);direction:ltr;unicode-bidi:isolate}
+.hstats span{display:block;font-size:11.5px;color:var(--dim);font-weight:700;margin-top:7px;
+  letter-spacing:.03em}
+
+.shotwrap{position:relative;isolation:isolate}
+.shot{position:relative;z-index:1;aspect-ratio:4/5;overflow:hidden;background:#0A0C10;
+  clip-path:polygon(0 0,100% 0,100% calc(100% - 46px),calc(100% - 46px) 100%,0 100%)}
+.shot img{width:100%;height:100%;object-fit:cover;object-position:52% 15%;
+  filter:grayscale(.42) contrast(1.1) brightness(.9) saturate(.9);
+  transform:scale(1.03);transition:filter 1.1s var(--ease),transform 1.4s var(--ease)}
+.shotwrap:hover .shot img{filter:grayscale(0) contrast(1.04) brightness(1) saturate(1.04);
+  transform:scale(1)}
+.shot::after{content:"";position:absolute;inset:0;pointer-events:none;
+  background:linear-gradient(205deg,rgba(8,9,11,.72) 0%,rgba(46,109,246,.24) 16%,transparent 46%,rgba(8,9,11,.52) 86%,rgba(8,9,11,.92) 100%);
+  transition:opacity .9s var(--ease)}
+.shotwrap:hover .shot::after{opacity:.5}
+.shot .scan{position:absolute;inset-inline:0;height:28%;top:-28%;pointer-events:none;
+  background:linear-gradient(180deg,transparent,rgba(109,164,255,.14),transparent);
+  animation:scan 7s var(--ease) infinite}
+@keyframes scan{0%{top:-30%}55%{top:100%}100%{top:100%}}
+.brk{position:absolute;z-index:2;width:40px;height:40px;border:2px solid var(--volt);pointer-events:none}
+.brk.tl{top:-11px;inset-inline-start:-11px;border-width:2px 0 0 2px}
+html[dir=rtl] .brk.tl{border-width:2px 2px 0 0}
+.brk.br{bottom:-11px;inset-inline-end:-11px;border-width:0 2px 2px 0}
+html[dir=rtl] .brk.br{border-width:0 0 2px 2px}
+
+.chip-v{position:absolute;z-index:2;bottom:18px;inset-inline-start:18px;display:flex;align-items:center;gap:8px;
+  padding:8px 13px;background:rgba(8,9,11,.78);backdrop-filter:blur(10px);
+  border:1px solid var(--line2);font-size:11.5px;font-weight:800;max-width:calc(100% - 36px)}
+.chip-v svg{width:15px;height:15px;color:var(--jade);flex:0 0 auto}
+.chip-f{position:absolute;z-index:2;top:-16px;inset-inline-end:16px;padding:9px 14px;background:var(--volt);
+  color:#fff;font-family:var(--fn);font-weight:800;font-size:12.5px;letter-spacing:.06em;
+  box-shadow:0 10px 30px rgba(46,109,246,.34)}
+@media (max-width:920px){.shotwrap{max-width:430px;margin-inline:auto}}
+
+/* ============================== TICKER ============================== */
+.ticker{border-block:1px solid var(--line);background:var(--pit);overflow:hidden;
+  padding:15px 0;position:relative;z-index:2}
+.ticker .tk{display:flex;width:max-content;animation:tk 34s linear infinite;direction:ltr}
+.ticker:hover .tk{animation-play-state:paused}
+@keyframes tk{to{transform:translateX(-50%)}}
+/* plaintext bidi so each Arabic item reads RTL inside the LTR-animated strip */
+.ticker i{font-style:normal;display:inline-flex;align-items:center;gap:16px;padding:0 20px;
+  font-size:13px;font-weight:800;color:var(--ash);letter-spacing:.06em;white-space:nowrap;
+  unicode-bidi:plaintext}
+.ticker i::after{content:"";width:5px;height:5px;background:var(--volt);flex:0 0 auto}
+
+/* ============================== ABOUT ============================== */
+.abt{display:grid;grid-template-columns:1.12fr .88fr;gap:clamp(28px,4.5vw,64px);align-items:start}
+@media (max-width:900px){.abt{grid-template-columns:1fr}}
+.abt p{color:var(--ash);margin-bottom:16px}
+.abt p strong{color:var(--chalk);font-weight:800}
+.credlist{display:grid;gap:11px}
+.cred{display:flex;gap:14px;padding:17px;background:var(--card);border:1px solid var(--line);
+  border-inline-start:3px solid var(--volt);transition:all .35s var(--ease)}
+.cred:hover{background:var(--card2);border-inline-start-color:var(--volt2);transform:translateY(-2px)}
+.cred .ci{width:38px;height:38px;flex:0 0 auto;display:grid;place-items:center;
+  background:var(--volt-dim);color:var(--volt2)}
+.cred .ci svg{width:19px;height:19px}
+.cred h4{font-size:14.5px;font-weight:800;line-height:1.4}
+.cred span{display:block;font-size:12px;color:var(--dim);margin-top:4px;line-height:1.55}
+.cred em{font-style:normal;font-family:var(--fn);font-size:11px;color:var(--jade);font-weight:600;
+  direction:ltr;unicode-bidi:isolate;display:inline-block;margin-top:3px}
+
+/* ============================== NUMBERS ============================== */
+#numbers{padding-block:clamp(44px,6vw,76px)}
+.nums{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line)}
+@media (max-width:760px){.nums{grid-template-columns:repeat(2,1fr)}}
+.nums>div{background:var(--pit);padding:clamp(22px,3.4vw,38px) clamp(16px,2.4vw,28px);
+  transition:background .4s var(--ease);position:relative;overflow:hidden}
+.nums>div::before{content:"";position:absolute;inset-inline-start:0;top:0;width:100%;height:2px;
+  background:var(--volt);transform:scaleX(0);transition:transform .6s var(--ease)}
+.nums>div:hover{background:var(--iron)}
+.nums>div:hover::before{transform:scaleX(1)}
+.nums b{display:block;font-family:var(--fn);font-weight:800;line-height:1;
+  font-size:clamp(34px,5.6vw,58px);letter-spacing:-.02em;direction:ltr;unicode-bidi:isolate}
+.nums span{display:block;margin-top:10px;font-size:12.5px;font-weight:700;color:var(--ash)}
+
+/* ============================== SERVICES ============================== */
+.svcs{display:grid;grid-template-columns:repeat(auto-fit,minmax(248px,1fr));gap:14px}
+.svc{padding:clamp(22px,3vw,30px);background:var(--card);border:1px solid var(--line);
+  position:relative;overflow:hidden;transition:all .4s var(--ease)}
+.svc::after{content:"";position:absolute;inset-inline-end:-40px;top:-40px;width:110px;height:110px;
+  background:radial-gradient(circle,var(--volt-dim),transparent 70%);opacity:0;transition:opacity .5s}
+.svc:hover{background:var(--card2);border-color:var(--line2);transform:translateY(-5px)}
+.svc:hover::after{opacity:1}
+.svc .si{width:46px;height:46px;display:grid;place-items:center;margin-bottom:18px;
+  border:1px solid var(--line2);color:var(--volt2);transition:all .4s var(--ease)}
+.svc .si svg{width:23px;height:23px}
+.svc:hover .si{background:var(--volt);border-color:var(--volt);color:#fff}
+.svc h3{font-family:var(--fd);font-size:18px;font-weight:800;margin-bottom:9px;line-height:1.35}
+.svc p{color:var(--ash);font-size:14px;line-height:1.72}
+.svc .no{position:absolute;top:16px;inset-inline-end:18px;font-family:var(--fn);font-size:12px;
+  font-weight:700;color:var(--line2)}
+
+/* ============================== METHOD ============================== */
+.phases{display:grid;position:relative}
+.ph{display:grid;grid-template-columns:auto 1fr;gap:clamp(18px,3vw,34px);
+  padding-block:clamp(22px,3vw,32px);border-top:1px solid var(--line);position:relative}
+.ph:last-child{border-bottom:1px solid var(--line)}
+.ph .pn{font-family:var(--fn);font-weight:800;font-size:clamp(30px,4.6vw,48px);line-height:1;
+  color:transparent;-webkit-text-stroke:1.4px var(--line2);direction:ltr;
+  transition:color .45s var(--ease),-webkit-text-stroke-color .45s var(--ease)}
+.ph:hover .pn{color:var(--volt);-webkit-text-stroke-color:var(--volt)}
+.ph h3{font-family:var(--fd);font-size:clamp(17px,1.4vw + 14px,22px);font-weight:800;margin-bottom:4px}
+.ph .pw{font-family:var(--fn);font-size:11.5px;font-weight:700;color:var(--volt2);
+  letter-spacing:.1em;margin-bottom:9px;display:block;direction:ltr;unicode-bidi:isolate}
+.ph p{color:var(--ash);font-size:14.5px;max-width:64ch}
+.ph ul{list-style:none;margin-top:12px;display:flex;flex-wrap:wrap;gap:7px}
+.ph li{font-size:12px;font-weight:700;color:var(--ash);padding:5px 11px;border:1px solid var(--line2)}
+
+/* ============================== CHIPS ============================== */
+.chips{display:flex;flex-wrap:wrap;gap:9px}
+.chips span{padding:9px 15px;background:var(--card);border:1px solid var(--line);
+  font-size:13px;font-weight:700;color:var(--ash);transition:all .3s var(--ease);cursor:default}
+.chips span:hover{color:var(--chalk);border-color:var(--volt);background:var(--volt-dim);
+  transform:translateY(-2px)}
+
+/* ============================== GALLERY ============================== */
+.gal{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:12px}
+.gal figure{position:relative;margin:0;overflow:hidden;background:var(--card);
+  border:1px solid var(--line);cursor:zoom-in;aspect-ratio:3/4}
+.gal figure.wide{grid-column:span 2;aspect-ratio:3/2}
+@media (max-width:520px){.gal figure.wide{grid-column:span 2}}
+.gal img{width:100%;height:100%;object-fit:cover;object-position:50% 22%;
+  filter:brightness(.9) saturate(.95);transition:transform .7s var(--ease),filter .5s var(--ease)}
+.gal figure:hover img{transform:scale(1.05);filter:brightness(1) saturate(1.05)}
+.gal figcaption{position:absolute;inset-inline:0;bottom:0;padding:22px 13px 11px;
+  font-size:12px;font-weight:700;line-height:1.45;color:#fff;
+  background:linear-gradient(transparent,rgba(8,9,11,.92));
+  opacity:0;transform:translateY(8px);transition:all .4s var(--ease)}
+.gal figure:hover figcaption{opacity:1;transform:none}
+@media (hover:none){.gal figcaption{opacity:1;transform:none}}
+
+/* ============================== CERTIFICATES ============================== */
+.certs{display:grid;grid-template-columns:repeat(auto-fit,minmax(272px,1fr));gap:14px}
+.certcard{background:var(--card);border:1px solid var(--line);overflow:hidden;
+  transition:all .4s var(--ease)}
+.certcard:hover{border-color:var(--volt);transform:translateY(-4px)}
+.certcard .shotbox{position:relative;background:#fff;cursor:zoom-in;overflow:hidden;aspect-ratio:4/3}
+.certcard img{width:100%;height:100%;object-fit:contain;display:block;background:#fff;transition:transform .6s var(--ease)}
+.certcard:hover img{transform:scale(1.03)}
+.certcard .zoom{position:absolute;inset-inline-end:10px;bottom:10px;width:30px;height:30px;
+  display:grid;place-items:center;background:rgba(8,9,11,.78);color:#fff;
+  opacity:0;transition:opacity .35s}
+.certcard .zoom svg{width:15px;height:15px}
+.certcard:hover .zoom{opacity:1}
+.certcard .body{padding:16px 17px}
+.certcard h4{font-size:14.5px;font-weight:800;line-height:1.45}
+.certcard span{display:block;font-size:12px;color:var(--dim);margin-top:5px;line-height:1.55}
+
+/* ============================== LIGHTBOX ============================== */
+#lb{position:fixed;inset:0;z-index:90;background:rgba(5,6,8,.95);display:none;
+  place-items:center;padding:clamp(14px,4vw,48px)}
+#lb.on{display:grid}
+#lb img{max-width:100%;max-height:86vh;object-fit:contain;display:block}
+#lb .cap{position:absolute;inset-inline:0;bottom:16px;text-align:center;font-size:13px;
+  font-weight:700;color:var(--ash);padding:0 20px}
+#lb button{position:absolute;width:46px;height:46px;display:grid;place-items:center;
+  background:rgba(255,255,255,.07);border:1px solid var(--line2);color:#fff;
+  transition:all .3s var(--ease)}
+#lb button:hover{background:var(--volt);border-color:var(--volt)}
+#lb button svg{width:20px;height:20px}
+#lb .x{top:16px;inset-inline-end:16px}
+#lb .pv{inset-inline-start:16px;top:50%;transform:translateY(-50%)}
+#lb .nx{inset-inline-end:16px;top:50%;transform:translateY(-50%)}
+html[dir=rtl] #lb .pv svg,html[dir=rtl] #lb .nx svg{transform:scaleX(-1)}
+
+/* ============================== INSTAGRAM FOLLOW ============================== */
+.igfollow{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;
+  gap:18px;padding:clamp(22px,3.4vw,32px);text-align:center;margin-top:16px;
+  background:linear-gradient(150deg,var(--card2),var(--card));border:1px solid var(--line2)}
+.igfollow .ring{width:74px;height:74px;border-radius:50%;padding:3px;
+  background:linear-gradient(45deg,#F9CE34,#EE2A7B 55%,#6228D7);display:grid;place-items:center}
+.igfollow .ring span{width:100%;height:100%;border-radius:50%;background:var(--card);display:grid;
+  place-items:center;color:#fff}
+.igfollow .ring svg{width:32px;height:32px}
+.igfollow b{font-family:var(--fn);font-size:28px;font-weight:800;line-height:1;display:block;
+  direction:ltr;unicode-bidi:isolate}
+.igfollow small{color:var(--dim);font-size:12.5px;font-weight:700;display:block;margin-top:6px;
+  direction:ltr;unicode-bidi:isolate}
+
+/* ============================== CV + SHARE ============================== */
+.two{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media (max-width:820px){.two{grid-template-columns:1fr}}
+.panel{padding:clamp(24px,3.4vw,40px);background:var(--card);border:1px solid var(--line)}
+.panel h3{font-family:var(--fd);font-size:clamp(19px,1.6vw + 15px,25px);font-weight:800;margin-bottom:10px}
+.panel p{color:var(--ash);font-size:14.5px;margin-bottom:22px}
+.dl{display:flex;flex-wrap:wrap;gap:10px}
+.cvlist{list-style:none;margin:0 0 24px;display:grid;gap:10px}
+.cvlist li{display:flex;gap:10px;font-size:14px;color:var(--ash);line-height:1.6}
+.cvlist li::before{content:"";flex:0 0 auto;width:6px;height:6px;margin-top:9px;background:var(--volt)}
+
+.linkbox{display:flex;align-items:center;gap:10px;padding:12px 14px;background:var(--pit);
+  border:1px solid var(--line2);margin-bottom:18px}
+.linkbox code{flex:1;min-width:0;font-family:var(--fn);font-size:12.5px;color:var(--volt2);
+  direction:ltr;unicode-bidi:isolate;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.linkbox button{flex:0 0 auto;padding:7px 13px;border:1px solid var(--line2);font-size:12px;
+  font-weight:800;color:var(--ash);transition:all .3s}
+.linkbox button:hover{color:#fff;border-color:var(--volt);background:var(--volt-dim)}
+.qr{width:160px;background:#fff;padding:11px;margin-inline:auto}
+.qr svg{width:100%;height:auto;display:block}
+.qrcap{text-align:center;font-size:12px;color:var(--dim);margin-top:12px;font-weight:700}
+
+/* ============================== CONTACT ============================== */
+#contact{text-align:center}
+#contact h2.sec,#contact .lede{margin-inline:auto}
+#contact .lede{margin-bottom:30px}
+.ccta{display:flex;flex-wrap:wrap;gap:12px;justify-content:center}
+.phone{display:inline-block;margin-top:24px;font-family:var(--fn);
+  font-size:clamp(19px,2.6vw,28px);font-weight:700;letter-spacing:.02em;
+  direction:ltr;unicode-bidi:isolate;color:var(--chalk);transition:color .3s}
+.phone:hover{color:var(--volt2)}
+
+/* ============================== FOOTER ============================== */
+footer{border-top:1px solid var(--line);background:var(--pit);position:relative;z-index:2}
+footer .fin{max-width:var(--maxw);margin:0 auto;padding:34px var(--pad);
+  display:flex;flex-wrap:wrap;gap:18px;align-items:center;justify-content:space-between}
+footer small{color:var(--dim);font-size:12px;line-height:1.8}
+footer small b{color:var(--ash)}
+
+/* ============================== FAB ============================== */
+.fabs{position:fixed;bottom:20px;inset-inline-end:20px;z-index:55;display:flex;gap:10px;
+  align-items:center;flex-direction:row-reverse}
+.fab{position:relative;width:56px;height:56px;border-radius:50%;display:grid;place-items:center;
+  transition:transform .35s var(--ease)}
+.fab svg{width:29px;height:29px}
+.fab:hover{transform:scale(1.1)}
+.fab-wa{background:#25D366;color:#06130B;box-shadow:0 10px 30px rgba(37,211,102,.4)}
+.fab-ig{background:linear-gradient(45deg,#F9CE34,#EE2A7B 55%,#6228D7);color:#fff;
+  box-shadow:0 10px 30px rgba(238,42,123,.34)}
+.fab-wa::after{content:"";position:absolute;inset:0;border-radius:50%;border:2px solid #25D366;
+  animation:pulse 2.4s var(--ease) infinite;pointer-events:none}
+@keyframes pulse{0%{transform:scale(1);opacity:.7}100%{transform:scale(1.7);opacity:0}}
+</style>
+</head>
+<body data-site="https://coach-neez.github.io/">
+
+<div id="loader"><div class="ld"><div class="plate"></div><b>NEEZ</b></div></div>
+<canvas id="bg"></canvas>
+<div class="grain"></div>
+<div class="vign"></div>
+<div id="prog"></div>
+
+<nav id="nav"><div class="inner">
+  <a class="brand" href="#hero">
+    <span class="mk">N</span>
+    <span class="nm">NEEZ<small data-i="brandsub">COACH</small></span>
+  </a>
+  <div class="links">
+    <a href="#about" data-i="n1">نبذة</a>
+    <a href="#services" data-i="n2">الخدمات</a>
+    <a href="#method" data-i="n3">الطريقة</a>
+    <a href="#gallery" data-i="n4">الصور</a>
+    <a href="#certs" data-i="n5">الشهادات</a>
+    <a href="#contact" data-i="n6">تواصل</a>
+  </div>
+  <div class="navact">
+    <a class="ico wa" id="nav-wa" href="#" target="_blank" rel="noopener" aria-label="WhatsApp" title="WhatsApp"></a>
+    <a class="ico ig" href="https://www.instagram.com/coach_neez/" target="_blank" rel="noopener" aria-label="Instagram" title="Instagram"></a>
+    <button class="lang" id="lang">EN</button>
+  </div>
+</div></nav>
+
+<main>
+
+<!-- ============================ HERO ============================ -->
+<section id="hero"><div class="hgrid">
+  <div class="rv">
+    <span class="hbadge"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.9 6.1 6.7.9-4.9 4.6 1.2 6.6L12 17.1 6.1 20.2l1.2-6.6L2.4 9l6.7-.9z"/></svg><span data-i="badge">بطل المملكة في بطولة Muscle Beach Challenge — جدة 2024</span></span>
+    <h1><span data-i="n_a">ناصر عوض</span><span class="l2" data-i="n_b">كوتش نيز</span></h1>
+    <p class="hrole" data-i="role">مدرب شخصي ومدرب تغذية معتمد من <span class="ltr">NASM</span></p>
+    <p class="hsub" data-i="sub">خمسة عشر عاماً داخل الصالة. أكثر من 1200 متدرّب. برامج مبنية على قياساتك أنت — لا على خطة جاهزة.</p>
+    <div class="hcta">
+      <a class="btn btn-p" id="hero-wa" href="#" target="_blank" rel="noopener"><span class="i-wa"></span><span data-i="cta1">ابدأ معي على واتساب</span></a>
+    </div>
+    <div class="hstats">
+      <div><b class="num">15</b><span data-i="s1">سنة خبرة</span></div>
+      <div><b class="num">1200+</b><span data-i="s2">متدرّب</span></div>
+      <div><b class="num">228K</b><span data-i="s3">متابع</span></div>
+      <div><b class="num">4</b><span data-i="s4">اعتمادات</span></div>
+    </div>
+  </div>
+  <div class="shotwrap rv">
+    <span class="brk tl"></span><span class="brk br"></span>
+    <span class="chip-f num">172 CM</span>
+    <div class="shot">
+      <img src="nasser.jpg" alt="ناصر عوض — كوتش نيز" width="800" height="1000">
+      <span class="scan"></span>
+    </div>
+    <span class="chip-v"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M10.6 15.4l-3-3 1.4-1.4 1.6 1.6 4.4-4.4 1.4 1.4z"/><path d="M12 2.4l2.2 1.6 2.7-.2.9 2.6 2.4 1.3-.8 2.6.8 2.6-2.4 1.3-.9 2.6-2.7-.2L12 21.6l-2.2-1.6-2.7.2-.9-2.6L3.8 16l.8-2.6-.8-2.6 2.4-1.3.9-2.6 2.7.2z" opacity=".28"/></svg><span data-i="vchip">حساب موثّق على إنستغرام</span></span>
+  </div>
+</div></section>
+
+<!-- ============================ TICKER ============================ -->
+<div class="ticker"><div class="tk" id="tk"></div></div>
+
+<!-- ============================ ABOUT ============================ -->
+<section id="about"><div class="shead rv">
+  <span class="eyebrow" data-i="e1">نبذة</span>
+  <h2 class="sec" data-i="h1">مدرب يدرّب من تجربته، مش من كتاب</h2>
+</div>
+<div class="abt">
+  <div class="rv">
+    <p data-i="p1">اسمي ناصر عوض، معروف بـ<strong>كوتش نيز</strong>. بدأت التدريب سنة 2011، ومن وقتها ما توقفت — داخل صالات رياضية تجارية أولاً، ثم تدريب شخصي وأونلاين. اليوم عندي أكثر من <strong>1200 متدرّب</strong> بين إنقاص وزن وتضخيم وإعادة تأهيل، ولاعبين حضّرتهم للمنافسة في فئات مختلفة.</p>
+    <p data-i="p2">نزلت المسرح بنفسي وطلعت <strong>بطل المملكة في فئة 172 سم</strong>. هذا مهم لأنه معناه إني مريت على كل مرحلة: التضخيم، التنشيف، أسبوع البطولة، والإصابات اللي تجي في الطريق. أعرف وش يصير للجسم لأني جرّبته، لا لأني قرأت عنه.</p>
+    <p data-i="p3">ومع الخبرة، أخذت اعتماد <strong>NASM</strong> في التدريب الشخصي وفي التغذية، وشهادة الإنعاش القلبي الرئوي. يعني الجانب العملي مسنود بجانب علمي معتمد ومُحدَّث.</p>
+    <p data-i="p4">على إنستغرام أنشر محتوى تعليمي لأكثر من <strong>228 ألف متابع</strong> — تقنيات تمرين، تغذية ومكمّلات، وتصحيح معلومات غلط منتشرة في الوسط الرياضي.</p>
+  </div>
+  <div class="credlist rv">
+    <div class="cred"><span class="ci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v6c0 4.2-2.9 7.6-7 9-4.1-1.4-7-4.8-7-9V6z"/><path d="M9 12l2 2 4-4"/></svg></span>
+      <div><h4 data-i="c1t">مدرب شخصي معتمد — NASM-CPT</h4><span data-i="c1s">National Academy of Sports Medicine</span></div></div>
+    <div class="cred"><span class="ci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-4.3-7-9.8A4.2 4.2 0 0 1 12 8a4.2 4.2 0 0 1 7 3.2C19 16.7 12 21 12 21z"/><path d="M12 8V4"/></svg></span>
+      <div><h4 data-i="c2t">مدرب تغذية معتمد — NASM-CNC</h4><span data-i="c2s">National Academy of Sports Medicine</span></div></div>
+    <div class="cred"><span class="ci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h4l2-4 3 8 2-4h7"/></svg></span>
+      <div><h4 data-i="c3t">الإنعاش القلبي الرئوي — CPR/AED</h4><span data-i="c3s">American Safety Training Institute</span></div></div>
+    <div class="cred"><span class="ci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 4h11v16H8z"/><path d="M5 7v13h3"/><path d="M11 9h5M11 13h5"/></svg></span>
+      <div><h4 data-i="c4t">دورة التغذية — سجل إتمام</h4><span data-i="c4s">NASM · معتمدة من Association for Nutrition (L4) و Fitness Australia</span></div></div>
+  </div>
+</div></section>
+
+<!-- ============================ NUMBERS ============================ -->
+<section id="numbers"><div class="nums rv">
+  <div><b class="num ct" data-to="15">0</b><span data-i="k1">سنة في التدريب</span></div>
+  <div><b class="num ct" data-to="1200" data-suf="+">0</b><span data-i="k2">متدرّب ومتدرّبة</span></div>
+  <div><b class="num ct" data-to="228" data-suf="K">0</b><span data-i="k3">متابع على إنستغرام</span></div>
+  <div><b class="num ct" data-to="1" data-pre="#">0</b><span data-i="k4">بطل المملكة · 172 سم</span></div>
+</div></section>
+
+<!-- ============================ SERVICES ============================ -->
+<section id="services"><div class="shead rv">
+  <span class="eyebrow" data-i="e2">الخدمات</span>
+  <h2 class="sec" data-i="h2">وش أقدر أسوي لك</h2>
+  <p class="lede" data-i="l2">كل خدمة فيها برنامج مكتوب، متابعة أسبوعية، وتعديل مستمر حسب نتائجك الفعلية.</p>
+</div>
+<div class="svcs">
+  <div class="svc rv"><span class="no">01</span><span class="si"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M2 12h2M20 12h2"/><path d="M5 8v8M19 8v8"/><rect x="7.4" y="6" width="2.7" height="12" rx=".7"/><rect x="13.9" y="6" width="2.7" height="12" rx=".7"/><path d="M10.1 12h3.8"/></svg></span>
+    <h3 data-i="v1t">تدريب شخصي حضوري</h3><p data-i="v1d">حصص وجهاً لوجه داخل الصالة: تصحيح أداء الحركة، تدرّج الأوزان، وبناء روتين يناسب جسمك ووقتك.</p></div>
+  <div class="svc rv"><span class="no">02</span><span class="si"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="13" rx="1.6"/><path d="M8 21h8M12 17v4"/><path d="M7 12l2.5-2.5L12 12l4-4"/></svg></span>
+    <h3 data-i="v2t">تدريب أونلاين</h3><p data-i="v2d">برنامج مكتوب يوصلك مهما كان مكانك، مع مراجعة فيديوهات تمرينك ومتابعة أسبوعية على الواتساب.</p></div>
+  <div class="svc rv"><span class="no">03</span><span class="si"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 15a6 6 0 0 0 6-6V4H6v5a6 6 0 0 0 6 6z"/><path d="M18 5h3v2a3 3 0 0 1-3 3M6 5H3v2a3 3 0 0 0 3 3"/><path d="M9 20h6M12 15v5"/></svg></span>
+    <h3 data-i="v3t">تحضير للبطولات</h3><p data-i="v3d">من التضخيم للتنشيف لأسبوع المنافسة: جدولة دقيقة، إدارة الماء والصوديوم، وتجهيز العرض على المسرح.</p></div>
+  <div class="svc rv"><span class="no">04</span><span class="si"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V7a3 3 0 0 1 3-3h10a3 3 0 0 1 3 3v13"/><path d="M4 20h16"/><path d="M8 11h8M8 15h5"/></svg></span>
+    <h3 data-i="v4t">خطة تغذية</h3><p data-i="v4d">حساب سعراتك وتوزيع العناصر الغذائية على أكل تقدر تلتزم به فعلاً — بميزانيتك ونمط حياتك.</p></div>
+</div></section>
+
+<!-- ============================ METHOD ============================ -->
+<section id="method"><div class="shead rv">
+  <span class="eyebrow" data-i="e3">الطريقة</span>
+  <h2 class="sec" data-i="h3">تسعون يوماً · ثلاث مراحل</h2>
+  <p class="lede" data-i="l3">ما أبدأ معك بخطة جاهزة. نبدأ بقياساتك، ونبني عليها — وكل أسبوع نعدّل حسب ما يتغير فعلاً.</p>
+</div>
+<div class="phases">
+  <div class="ph rv"><span class="pn">01</span><div>
+    <span class="pw" data-i="w1">DAY 1 — 30</span>
+    <h3 data-i="m1t">التأسيس</h3>
+    <p data-i="m1d">قياسات كاملة وتقييم المستوى والإصابات السابقة. نضبط أداء الحركات الأساسية ونثبّت عدد الحصص ومواعيد الأكل. الهدف هنا الالتزام، مش الأرقام.</p>
+    <ul><li data-i="m1a">قياسات ومؤشرات</li><li data-i="m1b">تصحيح الحركة</li><li data-i="m1c">تثبيت الروتين</li></ul></div></div>
+  <div class="ph rv"><span class="pn">02</span><div>
+    <span class="pw" data-i="w2">DAY 31 — 60</span>
+    <h3 data-i="m2t">التغيير</h3>
+    <p data-i="m2d">نرفع الحمل التدريبي تدريجياً ونعدّل السعرات حسب استجابة جسمك المقاسة. هذه المرحلة اللي يبدأ فيها الشكل يتغير فعلاً وتبدأ القوة تزيد.</p>
+    <ul><li data-i="m2a">تدرّج الحمل</li><li data-i="m2b">تعديل السعرات</li><li data-i="m2c">متابعة أسبوعية</li></ul></div></div>
+  <div class="ph rv"><span class="pn">03</span><div>
+    <span class="pw" data-i="w3">DAY 61 — 90</span>
+    <h3 data-i="m3t">التثبيت</h3>
+    <p data-i="m3d">نثبّت النتيجة ونعلّمك تدير جسمك بنفسك: كيف تقرأ قياساتك، متى تزيد وتنقص، وكيف تكمل بعد ما ينتهي البرنامج. الهدف تستغنى عني.</p>
+    <ul><li data-i="m3a">تثبيت النتيجة</li><li data-i="m3b">خطة استمرار</li><li data-i="m3c">استقلال كامل</li></ul></div></div>
+</div>
+<div class="rv" style="margin-top:clamp(28px,4vw,46px)">
+  <span class="eyebrow" data-i="e4">التخصصات</span>
+  <div class="chips" id="chips"></div>
+</div></section>
+
+<!-- ============================ GALLERY ============================ -->
+<section id="gallery"><div class="shead rv">
+  <span class="eyebrow" data-i="e5">الصور</span>
+  <h2 class="sec" data-i="h4">من المسرح إلى الصالة</h2>
+  <p class="lede" data-i="l4">صور من بطولة Muscle Beach Challenge — جدة 2024، ومن التدريب اليومي.</p>
+</div>
+<div class="gal rv" id="gal"></div>
+<div class="igfollow rv">
+  <span class="ring"><span></span></span>
+  <span><b class="num">228K</b><small>@coach_neez</small></span>
+  <a class="btn btn-s" href="https://www.instagram.com/coach_neez/" target="_blank" rel="noopener"><span class="i-ig"></span><span data-i="igf">تابعني على إنستغرام</span></a>
+</div>
+</section>
+
+<!-- ============================ CERTIFICATES ============================ -->
+<section id="certs"><div class="shead rv">
+  <span class="eyebrow" data-i="e7">الشهادات</span>
+  <h2 class="sec" data-i="h6">شهادات معتمدة</h2>
+  <p class="lede" data-i="l6">اضغط على أي شهادة لتكبيرها.</p>
+</div>
+<div class="certs rv" id="certgrid"></div>
+</section>
+
+<!-- ============================ CV + SHARE ============================ -->
+<section id="cv"><div class="two">
+  <div class="panel rv">
+    <h3 data-i="cvh">السيرة الذاتية</h3>
+    <p data-i="cvp">نسخة كاملة بصيغة PDF متوافقة مع أنظمة التوظيف — بالعربية والإنجليزية، في صفحتين.</p>
+    <ul class="cvlist">
+      <li data-i="cv1">الخبرة العملية كاملة منذ 2011 داخل الصالات وفي التدريب الخاص</li>
+      <li data-i="cv2">الاعتمادات الأربعة بأرقامها وتواريخ صلاحيتها للتحقق</li>
+      <li data-i="cv3">السجل التنافسي والتخصصات والمهارات واللغات</li>
+      <li data-i="cv4">إقامة سارية ورخصة قيادة سعودية سارية</li>
+    </ul>
+    <div class="dl">
+      <a class="btn btn-s" href="Nasir_Awad_CV_AR.pdf" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12M7 11l5 5 5-5M4 20h16"/></svg><span data-i="cvar">السيرة — عربي</span></a>
+      <a class="btn btn-s" href="Nasir_Awad_CV_EN.pdf" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12M7 11l5 5 5-5M4 20h16"/></svg><span data-i="cven">السيرة — إنجليزي</span></a>
+    </div>
+  </div>
+  <div class="panel rv">
+    <h3 data-i="shh">رابط الصفحة</h3>
+    <p data-i="shp">انسخ الرابط أو امسح الباركود للوصول إلى هذه الصفحة من أي جهاز.</p>
+    <div class="linkbox"><code id="sitelink"></code><button id="copy" data-i="copy">نسخ</button></div>
+    <div class="qr" id="qr"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 29" shape-rendering="crispEdges"><path fill="none" d="M0 0h29v29H0z"/><path stroke="#0D0F13" d="M0 0.5h7m2 0h1m2 0h1m1 0h1m2 0h3m2 0h7M0 1.5h1m5 0h1m1 0h1m1 0h1m2 0h1m3 0h1m1 0h1m2 0h1m5 0h1M0 2.5h1m1 0h3m1 0h1m2 0h1m1 0h1m3 0h1m2 0h1m3 0h1m1 0h3m1 0h1M0 3.5h1m1 0h3m1 0h1m2 0h1m2 0h2m2 0h1m1 0h3m1 0h1m1 0h3m1 0h1M0 4.5h1m1 0h3m1 0h1m1 0h4m1 0h1m2 0h1m2 0h1m2 0h1m1 0h3m1 0h1M0 5.5h1m5 0h1m2 0h4m1 0h7m1 0h1m5 0h1M0 6.5h7m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h7M11 7.5h2m2 0h1m1 0h3M0 8.5h1m1 0h1m1 0h1m1 0h1m3 0h2m4 0h2m1 0h2m3 0h1m2 0h1M0 9.5h2m2 0h2m1 0h1m1 0h5m1 0h3m2 0h3m2 0h1m2 0h1M1 10.5h2m1 0h1m1 0h1m2 0h3m2 0h5m4 0h1m2 0h3M1 11.5h2m4 0h3m2 0h3m1 0h2m2 0h2m1 0h1m3 0h1M0 12.5h1m2 0h2m1 0h1m1 0h5m1 0h2m1 0h2m1 0h1m1 0h1m2 0h1m1 0h2M0 13.5h2m2 0h2m1 0h3m1 0h2m1 0h2m4 0h3m2 0h1m2 0h1M2 14.5h1m2 0h2m1 0h1m1 0h1m1 0h2m3 0h1m2 0h2m1 0h3m1 0h2M1 15.5h2m1 0h1m2 0h1m1 0h2m4 0h1m1 0h1m2 0h1m2 0h1m1 0h1m1 0h1M1 16.5h3m1 0h3m1 0h1m6 0h2m1 0h4m2 0h1m1 0h2M1 17.5h3m3 0h1m2 0h1m2 0h1m1 0h2m4 0h2m2 0h2m1 0h1M0 18.5h1m1 0h1m3 0h3m1 0h1m1 0h1m1 0h3m1 0h1m1 0h2m1 0h1m3 0h2M1 19.5h1m1 0h2m2 0h1m1 0h2m1 0h3m1 0h3m2 0h2m1 0h2m1 0h1M0 20.5h1m1 0h2m2 0h1m1 0h2m1 0h1m2 0h2m1 0h1m1 0h6M8 21.5h1m1 0h1m3 0h2m4 0h1m3 0h1m1 0h3M0 22.5h7m2 0h3m1 0h1m3 0h1m1 0h2m1 0h1m1 0h2m1 0h2M0 23.5h1m5 0h1m3 0h3m2 0h1m1 0h2m1 0h1m3 0h2M0 24.5h1m1 0h3m1 0h1m1 0h4m4 0h3m1 0h5m2 0h1M0 25.5h1m1 0h3m1 0h1m2 0h1m2 0h2m1 0h2m6 0h2m1 0h1M0 26.5h1m1 0h3m1 0h1m1 0h1m1 0h1m1 0h6m1 0h2m2 0h3m2 0h1M0 27.5h1m5 0h1m2 0h1m1 0h3m2 0h5m3 0h1m2 0h1M0 28.5h7m1 0h4m2 0h3m1 0h5m1 0h1m2 0h2"/></svg></div>
+    <p class="qrcap" data-i="qrcap">امسح الكود للوصول للصفحة</p>
+  </div>
+</div></section>
+
+<!-- ============================ CONTACT ============================ -->
+<section id="contact"><div class="rv">
+  <span class="eyebrow" data-i="e6">تواصل</span>
+  <h2 class="sec" data-i="h5">جاهز تبدأ؟</h2>
+  <p class="lede" data-i="l5">راسلني على الواتساب وقل لي هدفك ومستواك الحالي، وأرد عليك بخطة البداية.</p>
+  <div class="ccta">
+    <a class="btn btn-p" id="c-wa" href="#" target="_blank" rel="noopener"><span class="i-wa"></span><span data-i="cta3">راسلني على واتساب</span></a>
+    <a class="btn btn-s" href="https://www.instagram.com/coach_neez/" target="_blank" rel="noopener"><span class="i-ig"></span><span data-i="cta4">تابعني على إنستغرام</span></a>
+    <a class="btn btn-g" href="program.html"><span data-i="cta5">تفاصيل برنامج التسعين يوم</span></a>
+  </div>
+  <a class="phone" href="tel:+966556749567">+966 55 674 9567</a>
+</div></section>
+</main>
+
+<footer><div class="fin">
+  <small><b data-i="fname">ناصر عوض محمد عبيد</b> — <span data-i="frole">مدرب شخصي ومدرب تغذية معتمد من NASM</span><br>
+  <span data-i="floc">المملكة العربية السعودية</span> · <span class="ltr">@coach_neez</span></small>
+</div></footer>
+
+<div id="lb" role="dialog" aria-modal="true" aria-label="عرض الصورة">
+  <img id="lb-img" src="" alt="">
+  <p class="cap" id="lb-cap"></p>
+  <button class="x"  id="lb-x"  aria-label="إغلاق"></button>
+  <button class="pv" id="lb-pv" aria-label="السابق"></button>
+  <button class="nx" id="lb-nx" aria-label="التالي"></button>
+</div>
+
+<div class="fabs">
+  <a class="fab fab-ig" href="https://www.instagram.com/coach_neez/" target="_blank" rel="noopener" aria-label="Instagram"></a>
+  <a class="fab fab-wa" id="fab" href="#" target="_blank" rel="noopener" aria-label="WhatsApp"></a>
+</div>
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Person","name":"ناصر عوض محمد عبيد",
+"alternateName":["Nasir Awad Mohamed Obaid","Coach Neez","كوتش نيز"],
+"jobTitle":"مدرب شخصي ومدرب تغذية معتمد","image":"nasser.jpg",
+"address":{"@type":"PostalAddress","addressCountry":"SA"},
+"telephone":"+966556749567","sameAs":["https://www.instagram.com/coach_neez/"],
+"knowsLanguage":["ar","en"],
+"hasCredential":[
+{"@type":"EducationalOccupationalCredential","name":"NASM Certified Personal Trainer (CPT)","credentialCategory":"certification","recognizedBy":{"@type":"Organization","name":"National Academy of Sports Medicine"}},
+{"@type":"EducationalOccupationalCredential","name":"NASM Certified Nutrition Coach (CNC)","credentialCategory":"certification","recognizedBy":{"@type":"Organization","name":"National Academy of Sports Medicine"}},
+{"@type":"EducationalOccupationalCredential","name":"CPR/AED","credentialCategory":"certification","recognizedBy":{"@type":"Organization","name":"American Safety Training Institute"}}],
+"knowsAbout":["Personal training","Bodybuilding","Sports nutrition","Competition preparation"]}
+</script>
+
+<script>
+(function(){
+"use strict";
+var $=function(s,r){return (r||document).querySelector(s)};
+var $$=function(s,r){return Array.prototype.slice.call((r||document).querySelectorAll(s))};
+var PHONE='966556749567';
+var SITE=document.body.getAttribute('data-site');
+
+/* gallery: championship ceremony first, then stage, then training */
+var GAL=[
+ {f:'gallery/g01.jpg',k:'gc1',wide:1},
+ {f:'gallery/g02.jpg',k:'gc2'},
+ {f:'gallery/g03.jpg',k:'gc3'},
+ {f:'gallery/g04.jpg',k:'gc4'},
+ {f:'gallery/g05.jpg',k:'gc5'},
+ {f:'gallery/g07.jpg',k:'gc7'},
+ {f:'gallery/g08.jpg',k:'gc8'},
+ {f:'gallery/g06.jpg',k:'gc6'},
+ {f:'gallery/g09.jpg',k:'gc9'},
+ {f:'gallery/g10.jpg',k:'gc10'},
+ {f:'gallery/g11.jpg',k:'gc11'}
+];
+var CERT=[
+ {f:'certs/cpt.jpg',t:'ct1',s:'cs1'},
+ {f:'certs/cnc.jpg',t:'ct2',s:'cs2'},
+ {f:'certs/cpr.jpg',t:'ct3',s:'cs3'},
+ {f:'certs/nut.jpg',t:'ct4',s:'cs4'}
+];
+
+/* ---------------------------- icons ---------------------------- */
+var SVG={
+ wa:'<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.46 1.32 4.96L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22c5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2zm0 18.15a8.2 8.2 0 0 1-4.19-1.14l-.3-.18-3.1.81.83-3.03-.2-.31a8.2 8.2 0 0 1-1.26-4.39c0-4.54 3.7-8.23 8.23-8.23 2.2 0 4.26.86 5.81 2.41a8.16 8.16 0 0 1 2.41 5.83c0 4.53-3.69 8.23-8.23 8.23zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-.94-.35-1.79-1.1-.66-.59-1.11-1.32-1.24-1.57-.13-.25-.01-.38.11-.5.11-.12.25-.29.37-.43.12-.14.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.35-.77-1.85-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.23.25-.86.84-.86 2.04 0 1.21.88 2.38 1 2.54.12.17 1.72 2.63 4.17 3.59.58.25 1.04.4 1.4.51.59.19 1.12.16 1.54.1.47-.07 1.44-.59 1.64-1.16.2-.57.2-1.05.14-1.15-.06-.1-.22-.16-.47-.28z"/></svg>',
+ ig:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><rect x="2.9" y="2.9" width="18.2" height="18.2" rx="5.2"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.3" cy="6.7" r="1.15" fill="currentColor" stroke="none"/></svg>',
+ zoom:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.6-3.6M11 8v6M8 11h6"/></svg>',
+ x:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>',
+ pv:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/></svg>',
+ nx:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"/></svg>'
+};
+$$('.ico.wa').forEach(function(e){e.innerHTML=SVG.wa});
+$$('.ico.ig').forEach(function(e){e.innerHTML=SVG.ig});
+$$('.i-wa').forEach(function(e){e.innerHTML=SVG.wa});
+$$('.i-ig').forEach(function(e){e.innerHTML=SVG.ig});
+$('#fab').innerHTML=SVG.wa;
+$('.fab-ig').innerHTML=SVG.ig;
+
+/* ---------------------------- copy ---------------------------- */
+var T={
+ ar:{
+  brandsub:'COACH', n1:'نبذة',n2:'الخدمات',n3:'الطريقة',n4:'الصور',n5:'الشهادات',n6:'تواصل',
+  badge:'بطل المملكة في بطولة Muscle Beach Challenge — جدة 2024',
+  n_a:'ناصر عوض', n_b:'كوتش نيز',
+  role:'مدرب شخصي ومدرب تغذية معتمد من <span class="ltr">NASM</span>',
+  sub:'15 سنة في التدريب. أكثر من 1200 متدرّب. برنامجك يُبنى على قياساتك أنت.',
+  cta1:'ابدأ تحوّلك اليوم',
+  s1:'سنة خبرة',s2:'متدرّب',s3:'متابع',s4:'شهادات',
+  vchip:'حساب موثّق على إنستغرام',
+  e1:'نبذة', h1:'مدرب جرّب الطريق بنفسه',
+  p1:'أنا ناصر عوض، المعروف بـ<strong>كوتش نيز</strong>. بدأت التدريب سنة 2011 وما وقفت. اشتغلت في صالات رياضية، وبعدها تدريب شخصي وأونلاين. درّبت أكثر من <strong>1200 شخص</strong>: نزول وزن، زيادة عضل، ورجوع بعد إصابة.',
+  p2:'نزلت المسرح بنفسي وطلعت <strong>بطل المملكة في فئة 172 سم</strong>، وشاركت في <strong>بطولة Muscle Beach Challenge في جدة 2024</strong>. يعني مريت على كل مرحلة: التضخيم، التنشيف، وأسبوع البطولة.',
+  p3:'ومعي اعتماد <strong>NASM</strong> في التدريب الشخصي وفي التغذية، وشهادة إنعاش قلبي رئوي. خبرة عملية على أساس علمي معتمد.',
+  p4:'وأنشر على إنستغرام محتوى تعليمي لأكثر من <strong>228 ألف متابع</strong>: طريقة التمرين، التغذية، والمكمّلات.',
+  c1t:'مدرب شخصي معتمد — NASM-CPT', c1s:'National Academy of Sports Medicine',
+  c2t:'مدرب تغذية معتمد — NASM-CNC', c2s:'National Academy of Sports Medicine',
+  c3t:'إنعاش قلبي رئوي — CPR/AED', c3s:'American Safety Training Institute',
+  c4t:'دورة التغذية', c4s:'NASM · معتمدة من Association for Nutrition و Fitness Australia',
+  k1:'سنة في التدريب',k2:'متدرّب ومتدرّبة',k3:'متابع على إنستغرام',k4:'بطل المملكة · 172 سم',
+  e2:'الخدمات', h2:'وش أقدر أسوي لك',
+  l2:'كل خدمة فيها برنامج مكتوب ومتابعة أسبوعية.',
+  v1t:'تدريب شخصي في الصالة', v1d:'حصص وجهاً لوجه: أصحّح لك الحركة، أرتّب الأوزان، وأبني روتين يناسب وقتك.',
+  v2t:'تدريب أونلاين', v2d:'برنامج مكتوب يوصلك في أي مكان، وأراجع فيديو تمرينك، ومتابعة أسبوعية على الواتساب.',
+  v3t:'تحضير للبطولات', v3d:'من التضخيم للتنشيف لأسبوع البطولة: جدول دقيق، ضبط الماء والملح، وتجهيز الوقفات على المسرح.',
+  v4t:'خطة تغذية', v4d:'أحسب سعراتك وأوزّعها على أكل تقدر تلتزم فيه — بميزانيتك وبنمط حياتك.',
+  e3:'الطريقة', h3:'90 يوم · ثلاث مراحل',
+  l3:'ما أعطيك خطة جاهزة. نبدأ من قياساتك، ونعدّل كل أسبوع حسب النتيجة.',
+  w1:'DAY 1 — 30', m1t:'التأسيس',
+  m1d:'نأخذ قياساتك ونعرف مستواك وإصاباتك السابقة. نضبط الحركات الأساسية ونثبّت عدد الحصص ومواعيد الأكل. الهدف هنا الالتزام، مو الأرقام.',
+  m1a:'قياسات',m1b:'تصحيح الحركة',m1c:'تثبيت الروتين',
+  w2:'DAY 31 — 60', m2t:'التغيير',
+  m2d:'نرفع الأوزان بالتدريج ونعدّل السعرات حسب استجابة جسمك. هنا يبدأ الشكل يتغيّر وتبدأ القوة تزيد.',
+  m2a:'زيادة الحمل',m2b:'تعديل السعرات',m2c:'متابعة أسبوعية',
+  w3:'DAY 61 — 90', m3t:'التثبيت',
+  m3d:'نثبّت النتيجة وأعلّمك تدير جسمك بنفسك: كيف تقرأ قياساتك، ومتى تزيد أو تنقّص، وكيف تكمل بعد البرنامج.',
+  m3a:'تثبيت النتيجة',m3b:'خطة استمرار',m3c:'تمشي بنفسك',
+  e4:'التخصصات',
+  e5:'الصور', h4:'من المسرح إلى الصالة', l4:'صور من بطولة Muscle Beach Challenge — جدة 2024، ومن التدريب اليومي.',
+  gc1:'منصة التتويج — بطولة Muscle Beach Challenge، جدة 2024',
+  gc2:'على المسرح — بطولة Lion Gym',
+  gc3:'وقفة جانبية على المسرح — بطولة Lion Gym',
+  gc4:'على مسرح بطولة المملكة',
+  gc5:'بميدالية بطولة Muscle Beach Challenge — جدة 2024',
+  gc6:'في بطولة Muscle Beach Challenge — جدة 2024',
+  gc7:'تمرين في الصالة',
+  gc8:'وقفة عرض عضلات الظهر',
+  gc9:'متابعة الأداء أمام المرآة',
+  gc10:'بين التمارين',
+  gc11:'تدريب في الهواء الطلق',
+  igf:'تابعني على إنستغرام',
+  e7:'الشهادات', h6:'شهادات معتمدة', l6:'اضغط على أي شهادة لتكبيرها.',
+  ct1:'مدرب شخصي معتمد (CPT)', cs1:'National Academy of Sports Medicine — NASM',
+  ct2:'مدرب تغذية معتمد (CNC)', cs2:'National Academy of Sports Medicine — NASM',
+  ct3:'إنعاش قلبي رئوي ومزيل رجفان (CPR/AED)', cs3:'American Safety Training Institute',
+  ct4:'دورة التغذية', cs4:'NASM · معتمدة من Association for Nutrition و Fitness Australia',
+  cvh:'السيرة الذاتية',
+  cvp:'نسخة كاملة بصيغة PDF، بالعربية والإنجليزية، في صفحتين.',
+  cv1:'الخبرة كاملة من 2011 في الصالات وفي التدريب الخاص',
+  cv2:'الشهادات الأربعة بأرقامها للتحقق',
+  cv3:'البطولات والتخصصات والمهارات واللغات',
+  cv4:'إقامة سارية ورخصة قيادة سعودية سارية',
+  cvar:'السيرة — عربي', cven:'السيرة — إنجليزي',
+  shh:'رابط الصفحة', shp:'انسخ الرابط أو امسح الباركود لفتح الصفحة من أي جهاز.',
+  copy:'نسخ', copied:'تم النسخ', qrcap:'امسح الكود لفتح الصفحة',
+  e6:'تواصل', h5:'جاهز تبدأ؟',
+  l5:'اكتب لي هدفك ومستواك الحالي، وأرد عليك بخطة البداية.',
+  cta3:'كلّمني الآن وابدأ', cta4:'تابعني على إنستغرام', cta5:'تفاصيل برنامج الـ90 يوم',
+  fname:'ناصر عوض محمد عبيد', frole:'مدرب شخصي ومدرب تغذية معتمد من NASM', floc:'المملكة العربية السعودية',
+  chips:['نزول الوزن','زيادة العضل','تحضير البطولات','تصحيح الحركة','تقوية أسفل الظهر','التغذية الرياضية','المكمّلات','المبتدئين','التدريب أونلاين','الرجوع بعد إصابة'],
+  tick:['NASM-CPT','NASM-CNC','CPR / AED','بطل المملكة · 172 سم','15 سنة خبرة','1200+ متدرّب','228K متابع','حساب موثّق','تحضير بطولات','تدريب أونلاين'],
+  wa:'السلام عليكم كوتش نيز 👋 أبغى أبدأ معك — هدفي:'
+ },
+ en:{
+  brandsub:'COACH', n1:'About',n2:'Services',n3:'Method',n4:'Photos',n5:'Certificates',n6:'Contact',
+  badge:'SAUDI CHAMPION — MUSCLE BEACH CHALLENGE, JEDDAH 2024',
+  n_a:'Nasir Awad', n_b:'Coach Neez',
+  role:'NASM-Certified Personal Trainer &amp; Nutrition Coach',
+  sub:'15 years coaching. More than 1,200 clients. Your programme is built from your own measurements.',
+  cta1:'Start your transformation',
+  s1:'years coaching',s2:'clients',s3:'followers',s4:'certificates',
+  vchip:'Verified Instagram account',
+  e1:'About', h1:'A coach who has walked the road himself',
+  p1:'I am Nasir Awad, known as <strong>Coach Neez</strong>. I started coaching in 2011 and have not stopped. I worked on the gym floor first, then moved into private and online coaching. I have trained more than <strong>1,200 people</strong>: fat loss, muscle gain, and coming back after injury.',
+  p2:'I competed myself and became <strong>Saudi national champion in the 172 cm class</strong>, and competed at the <strong>Muscle Beach Challenge in Jeddah, 2024</strong>. So I have been through every stage: the off-season, the cut, and peak week.',
+  p3:'I also hold <strong>NASM</strong> certification in personal training and in nutrition, plus CPR/AED certification. Practical experience on a certified scientific base.',
+  p4:'On Instagram I publish educational content for more than <strong>228,000 followers</strong>: how to train, nutrition, and supplements.',
+  c1t:'Certified Personal Trainer — NASM-CPT', c1s:'National Academy of Sports Medicine',
+  c2t:'Certified Nutrition Coach — NASM-CNC', c2s:'National Academy of Sports Medicine',
+  c3t:'CPR / AED certified', c3s:'American Safety Training Institute',
+  c4t:'Nutrition Course', c4s:'NASM · recognised by the Association for Nutrition &amp; Fitness Australia',
+  k1:'years coaching',k2:'clients coached',k3:'Instagram followers',k4:'national champion · 172 cm',
+  e2:'Services', h2:'What I can do for you',
+  l2:'Every service comes with a written programme and weekly check-ins.',
+  v1t:'In-person training', v1d:'Face-to-face sessions: I correct your form, set your loads, and build a routine that fits your schedule.',
+  v2t:'Online coaching', v2d:'A written programme that reaches you anywhere, video review of your lifts, and weekly WhatsApp check-ins.',
+  v3t:'Competition prep', v3d:'From off-season to the cut to peak week: a precise schedule, water and sodium control, and stage posing.',
+  v4t:'Nutrition plan', v4d:'I work out your calories and spread them across food you can actually stick to — on your budget and your lifestyle.',
+  e3:'Method', h3:'90 days · three phases',
+  l3:'I do not hand you a template. We start from your measurements and adjust every week against the result.',
+  w1:'DAY 1 — 30', m1t:'Foundation',
+  m1d:'We take your measurements and find out your level and any past injuries. We clean up the main lifts and lock in session count and meal timing. The goal here is consistency, not numbers.',
+  m1a:'Measurements',m1b:'Form correction',m1c:'Routine locked in',
+  w2:'DAY 31 — 60', m2t:'Change',
+  m2d:'We add load gradually and adjust calories against how your body responds. This is where the shape starts to change and strength starts to climb.',
+  m2a:'Adding load',m2b:'Calorie adjustment',m2c:'Weekly check-ins',
+  w3:'DAY 61 — 90', m3t:'Consolidation',
+  m3d:'We hold the result and I teach you to run your own body: how to read your measurements, when to add or pull back, and how to carry on after the programme.',
+  m3a:'Hold the result',m3b:'Continuation plan',m3c:'On your own',
+  e4:'Specialities',
+  e5:'Photos', h4:'From the stage to the gym', l4:'Photos from the Muscle Beach Challenge — Jeddah 2024, and from everyday training.',
+  gc1:'Podium — Muscle Beach Challenge, Jeddah 2024',
+  gc2:'On stage — Lion Gym championship',
+  gc3:'Side pose on stage — Lion Gym championship',
+  gc4:'On stage at the Saudi national championship',
+  gc5:'With the Muscle Beach Challenge medal — Jeddah 2024',
+  gc6:'At the Muscle Beach Challenge — Jeddah 2024',
+  gc7:'Training in the gym',
+  gc8:'Lat spread',
+  gc9:'Checking form in the mirror',
+  gc10:'Between sets',
+  gc11:'Training outdoors',
+  igf:'Follow on Instagram',
+  e7:'Certificates', h6:'Certified credentials', l6:'Tap any certificate to enlarge it.',
+  ct1:'Certified Personal Trainer (CPT)', cs1:'National Academy of Sports Medicine — NASM',
+  ct2:'Certified Nutrition Coach (CNC)', cs2:'National Academy of Sports Medicine — NASM',
+  ct3:'CPR/AED — Adult, Child and Infant', cs3:'American Safety Training Institute',
+  ct4:'Nutrition Course', cs4:'NASM · recognised by the Association for Nutrition &amp; Fitness Australia',
+  cvh:'Curriculum vitae',
+  cvp:'The full PDF, in Arabic and English, across two pages.',
+  cv1:'Full work history from 2011, in gyms and in private coaching',
+  cv2:'All four certificates with their IDs for verification',
+  cv3:'Competitions, specialities, skills and languages',
+  cv4:'Valid Saudi residency permit and driving licence',
+  cvar:'CV — Arabic', cven:'CV — English',
+  shh:'Page link', shp:'Copy the link or scan the code to open this page on any device.',
+  copy:'Copy', copied:'Copied', qrcap:'Scan to open this page',
+  e6:'Contact', h5:'Ready to start?',
+  l5:'Send me your goal and your current level, and I will come back with a starting plan.',
+  cta3:'Message me and start', cta4:'Follow on Instagram', cta5:'See the 90-day programme',
+  fname:'Nasir Awad Mohamed Obaid', frole:'NASM-Certified Personal Trainer & Nutrition Coach', floc:'Saudi Arabia',
+  chips:['Fat loss','Muscle gain','Competition prep','Form correction','Lower-back strengthening','Sports nutrition','Supplements','Beginners','Online coaching','Return from injury'],
+  tick:['NASM-CPT','NASM-CNC','CPR / AED','NATIONAL CHAMPION · 172 CM','15 YEARS COACHING','1,200+ CLIENTS','228K FOLLOWERS','VERIFIED ACCOUNT','COMPETITION PREP','ONLINE COACHING'],
+  wa:'Hi Coach Neez 👋 I want to start with you — my goal is:'
+ }
+};
+
+/* ---------------------------- render ---------------------------- */
+var lang='ar';
+try{var sv=localStorage.getItem('neez-lang'); if(sv==='ar'||sv==='en')lang=sv}catch(e){}
+
+function render(l){
+  lang=l;
+  var t=T[l];
+  document.documentElement.lang=l;
+  document.documentElement.dir=(l==='ar'?'rtl':'ltr');
+  $$('[data-i]').forEach(function(el){
+    var v=t[el.dataset.i];
+    if(v!==undefined)el.innerHTML=v;
+  });
+  $('#lang').textContent=(l==='ar'?'EN':'ع');
+  $('#chips').innerHTML=t.chips.map(function(c){return '<span>'+c+'</span>'}).join('');
+
+  var row=t.tick.map(function(x){return '<i>'+x+'</i>'}).join('');
+  $('#tk').innerHTML=row+row;
+
+  var wa='https://wa.me/'+PHONE+'?text='+encodeURIComponent(t.wa);
+  ['#nav-wa','#hero-wa','#c-wa','#fab'].forEach(function(s){var e=$(s); if(e)e.href=wa});
+
+  $('#sitelink').textContent=SITE;
+  $('#copy').textContent=t.copy;
+
+  $('.igfollow .ring span').innerHTML=SVG.ig;
+
+  $('#gal').innerHTML=GAL.map(function(g,i){
+    var cap=t[g.k]||'';
+    return '<figure'+(g.wide?' class="wide"':'')+' data-i2="'+i+'">'+
+      '<img loading="lazy" src="'+g.f+'" alt="'+cap.replace(/"/g,'&quot;')+'">'+
+      '<figcaption>'+cap+'</figcaption></figure>';
+  }).join('');
+
+  $('#certgrid').innerHTML=CERT.map(function(c,i){
+    return '<div class="certcard"><div class="shotbox" data-c2="'+i+'">'+
+      '<img loading="lazy" src="'+c.f+'" alt="'+(t[c.t]||'')+'">'+
+      '<span class="zoom">'+SVG.zoom+'</span></div>'+
+      '<div class="body"><h4>'+(t[c.t]||'')+'</h4><span>'+(t[c.s]||'')+'</span></div></div>';
+  }).join('');
+
+  try{localStorage.setItem('neez-lang',l)}catch(e){}
+  observe();
+}
+
+$('#lang').addEventListener('click',function(){render(lang==='ar'?'en':'ar')});
+
+/* ---------------------------- copy link ---------------------------- */
+$('#copy').addEventListener('click',function(){
+  var b=this;
+  var done=function(){b.textContent=T[lang].copied;
+    setTimeout(function(){b.textContent=T[lang].copy},1800)};
+  if(navigator.clipboard&&navigator.clipboard.writeText){
+    navigator.clipboard.writeText(SITE).then(done,function(){});
+  }else{
+    var ta=document.createElement('textarea');ta.value=SITE;document.body.appendChild(ta);ta.select();
+    try{document.execCommand('copy');done()}catch(e){}
+    document.body.removeChild(ta);
+  }
+});
+
+/* ---------------------------- lightbox ---------------------------- */
+$('#lb-x').innerHTML=SVG.x; $('#lb-pv').innerHTML=SVG.pv; $('#lb-nx').innerHTML=SVG.nx;
+var lbSet=[],lbAt=0;
+
+function lbShow(i){
+  if(!lbSet.length)return;
+  lbAt=(i+lbSet.length)%lbSet.length;
+  $('#lb-img').src=lbSet[lbAt].f;
+  $('#lb-img').alt=lbSet[lbAt].cap||'';
+  $('#lb-cap').textContent=lbSet[lbAt].cap||'';
+  $('#lb').classList.add('on');
+  document.body.style.overflow='hidden';
+  var multi=lbSet.length>1;
+  $('#lb-pv').style.display=multi?'':'none';
+  $('#lb-nx').style.display=multi?'':'none';
+}
+function lbClose(){$('#lb').classList.remove('on');document.body.style.overflow='';$('#lb-img').src=''}
+
+$('#lb-x').addEventListener('click',lbClose);
+$('#lb-pv').addEventListener('click',function(e){e.stopPropagation();lbShow(lbAt-1)});
+$('#lb-nx').addEventListener('click',function(e){e.stopPropagation();lbShow(lbAt+1)});
+$('#lb').addEventListener('click',function(e){if(e.target===this)lbClose()});
+document.addEventListener('keydown',function(e){
+  if(!$('#lb').classList.contains('on'))return;
+  if(e.key==='Escape')lbClose();
+  else if(e.key==='ArrowRight')lbShow(lbAt+1);
+  else if(e.key==='ArrowLeft')lbShow(lbAt-1);
+});
+
+/* delegated: works after every re-render / language switch */
+document.addEventListener('click',function(e){
+  var fig=e.target.closest&&e.target.closest('[data-i2]');
+  if(fig){
+    var t=T[lang];
+    lbSet=GAL.map(function(g){return {f:g.f,cap:t[g.k]||''}});
+    lbShow(parseInt(fig.dataset.i2,10)); return;
+  }
+  var box=e.target.closest&&e.target.closest('[data-c2]');
+  if(box){
+    var t2=T[lang];
+    lbSet=CERT.map(function(c){return {f:c.f,cap:t2[c.t]||''}});
+    lbShow(parseInt(box.dataset.c2,10));
+  }
+});
+
+/* ---------------------------- reveal + counters ---------------------------- */
+var io=null;
+function observe(){
+  if(io)io.disconnect();
+  io=new IntersectionObserver(function(es){
+    es.forEach(function(e){
+      if(!e.isIntersecting)return;
+      e.target.classList.add('in');
+      $$('.ct',e.target).forEach(count);
+      io.unobserve(e.target);
+    });
+  },{threshold:.14,rootMargin:'0px 0px -8% 0px'});
+  $$('.rv').forEach(function(e){io.observe(e)});
+}
+
+function count(el){
+  if(el.dataset.done)return; el.dataset.done='1';
+  var to=parseFloat(el.dataset.to),pre=el.dataset.pre||'',suf=el.dataset.suf||'';
+  var t0=null,dur=1500;
+  function step(ts){
+    if(t0===null)t0=ts;
+    var p=Math.min((ts-t0)/dur,1), e=1-Math.pow(1-p,4);
+    el.textContent=pre+Math.round(to*e).toLocaleString('en-US')+suf;
+    if(p<1)requestAnimationFrame(step);
+  }
+  requestAnimationFrame(step);
+}
+
+/* ---------------------------- nav + progress ---------------------------- */
+var nav=$('#nav'),prog=$('#prog');
+function onScroll(){
+  var y=window.pageYOffset||document.documentElement.scrollTop;
+  nav.classList.toggle('stuck',y>40);
+  var h=document.documentElement.scrollHeight-window.innerHeight;
+  prog.style.width=(h>0?(y/h*100):0)+'%';
+}
+window.addEventListener('scroll',onScroll,{passive:true});
+
+/* ------------------- canvas: gym dust in a light shaft ------------------- */
+(function(){
+  var c=$('#bg');
+  if(!c||window.matchMedia('(prefers-reduced-motion:reduce)').matches)return;
+  var x=c.getContext('2d'),W=0,H=0,DPR=Math.min(window.devicePixelRatio||1,2),P=[],raf=null,tt=0;
+  function size(){
+    W=window.innerWidth;H=window.innerHeight;
+    c.width=W*DPR;c.height=H*DPR;c.style.width=W+'px';c.style.height=H+'px';
+    x.setTransform(DPR,0,0,DPR,0,0);
+    var n=Math.round(Math.min(110,Math.max(34,W*H/17000)));
+    P=[];
+    for(var i=0;i<n;i++)P.push({
+      x:Math.random()*W, y:Math.random()*H,
+      r:Math.random()*1.5+.35,
+      vx:(Math.random()-.5)*.1, vy:-(Math.random()*.16+.03),
+      a:Math.random()*.4+.08, ph:Math.random()*6.28
+    });
+  }
+  function frame(){
+    tt+=.006;
+    x.clearRect(0,0,W,H);
+    var g=x.createLinearGradient(W*.72,0,W*.3,H);
+    g.addColorStop(0,'rgba(46,109,246,.10)');
+    g.addColorStop(.45,'rgba(46,109,246,.030)');
+    g.addColorStop(1,'rgba(46,109,246,0)');
+    x.fillStyle=g;
+    x.beginPath();
+    x.moveTo(W*.52,-10);x.lineTo(W*1.08,-10);x.lineTo(W*.72,H+10);x.lineTo(W*.12,H+10);
+    x.closePath();x.fill();
+    for(var i=0;i<P.length;i++){
+      var p=P[i];
+      p.x+=p.vx+Math.sin(tt+p.ph)*.14; p.y+=p.vy;
+      if(p.y<-8){p.y=H+8;p.x=Math.random()*W}
+      if(p.x<-8)p.x=W+8; if(p.x>W+8)p.x=-8;
+      var al=p.a*(.6+.4*Math.sin(tt*1.7+p.ph));
+      x.beginPath();x.arc(p.x,p.y,p.r,0,6.283);
+      x.fillStyle='rgba(190,212,255,'+al.toFixed(3)+')';x.fill();
+    }
+    raf=requestAnimationFrame(frame);
+  }
+  window.addEventListener('resize',size,{passive:true});
+  document.addEventListener('visibilitychange',function(){
+    if(document.hidden){if(raf)cancelAnimationFrame(raf);raf=null}
+    else if(!raf)raf=requestAnimationFrame(frame);
+  });
+  size();raf=requestAnimationFrame(frame);
+})();
+
+/* ---------------------------- boot ---------------------------- */
+render(lang);
+onScroll();
+window.addEventListener('load',function(){
+  setTimeout(function(){$('#loader').classList.add('gone')},260);
+});
+setTimeout(function(){$('#loader').classList.add('gone')},2600);
+})();
+</script>
+</body>
+</html>
