@@ -376,6 +376,12 @@ html[dir=rtl] #lb .pv svg,html[dir=rtl] #lb .nx svg{transform:scaleX(-1)}
   font-size:clamp(19px,2.6vw,28px);font-weight:700;letter-spacing:.02em;
   direction:ltr;unicode-bidi:isolate;color:var(--chalk);transition:color .3s}
 .phone:hover{color:var(--volt2)}
+/* email sits under the phone: same family, a notch smaller so the
+   number stays the primary call-to-action */
+.mail{display:block;margin-top:10px;font-family:var(--fn);
+  font-size:clamp(14px,1.7vw,18px);font-weight:600;letter-spacing:.02em;
+  direction:ltr;unicode-bidi:isolate;color:var(--ash);transition:color .3s}
+.mail:hover{color:var(--volt2)}
 
 /* ============================== FOOTER ============================== */
 footer{border-top:1px solid var(--line);background:var(--pit);position:relative;z-index:2}
@@ -383,6 +389,8 @@ footer .fin{max-width:var(--maxw);margin:0 auto;padding:34px var(--pad);
   display:flex;flex-wrap:wrap;gap:18px;align-items:center;justify-content:space-between}
 footer small{color:var(--dim);font-size:12px;line-height:1.8}
 footer small b{color:var(--ash)}
+footer small a{color:var(--ash);text-decoration:none;transition:color .3s}
+footer small a:hover{color:var(--volt2)}
 
 /* ============================== FAB ============================== */
 .fabs{position:fixed;bottom:20px;inset-inline-end:20px;z-index:55;display:flex;gap:10px;
@@ -596,12 +604,13 @@ footer small b{color:var(--ash)}
     <a class="btn btn-g" href="program.html"><span data-i="cta5">تفاصيل برنامج التسعين يوم</span></a>
   </div>
   <a class="phone" href="tel:+966532002830">+966 53 200 2830</a>
+  <a class="mail" href="mailto:nasirobaid1991@gmail.com">nasirobaid1991@gmail.com</a>
 </div></section>
 </main>
 
 <footer><div class="fin">
   <small><b data-i="fname">ناصر عوض محمد عبيد</b> — <span data-i="frole">أخصائي تغذية معتمد ومدرب شخصي</span><br>
-  <span data-i="floc">المملكة العربية السعودية</span> · <span class="ltr">@coach_neez</span></small>
+  <span data-i="floc">المملكة العربية السعودية</span> · <span class="ltr">@coach_neez</span> · <a class="ltr" href="mailto:nasirobaid1991@gmail.com">nasirobaid1991@gmail.com</a></small>
 </div></footer>
 
 <div id="lb" role="dialog" aria-modal="true" aria-label="عرض الصورة">
@@ -622,7 +631,7 @@ footer small b{color:var(--ash)}
 "alternateName":["Nasir Awad Mohamed Obaid","Coach Neez","كوتش نيز"],
 "jobTitle":"أخصائي تغذية معتمد ومدرب شخصي","image":"nasser.jpg",
 "address":{"@type":"PostalAddress","addressCountry":"SA"},
-"telephone":"+966532002830","sameAs":["https://www.instagram.com/coach_neez/"],
+"telephone":"+966532002830","email":"nasirobaid1991@gmail.com","sameAs":["https://www.instagram.com/coach_neez/"],
 "knowsLanguage":["ar","en"],
 "hasCredential":[
 {"@type":"EducationalOccupationalCredential","name":"NASM Certified Personal Trainer (CPT)","credentialCategory":"certification","recognizedBy":{"@type":"Organization","name":"National Academy of Sports Medicine"}},
